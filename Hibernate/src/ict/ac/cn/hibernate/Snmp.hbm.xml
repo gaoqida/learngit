@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-8-24 12:59:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ict.ac.cn.hibernate.Snmp" table="snmp" catalog="bdtune">
+        <id name="snmpid" type="java.lang.Long">
+            <column name="snmpid" />
+            <generator class="identity" />
+        </id>
+        <property name="hostname" type="string">
+            <column name="hostname" length="32" not-null="true" />
+        </property>
+        <property name="activeConn" type="java.lang.Long">
+            <column name="active_conn" />
+        </property>
+        <property name="passiveConn" type="java.lang.Long">
+            <column name="passive_conn" />
+        </property>
+        <property name="rbytes" type="java.lang.Long">
+            <column name="rbytes" />
+        </property>
+        <property name="rpackets" type="java.lang.Long">
+            <column name="rpackets" />
+        </property>
+        <property name="rerrs" type="java.lang.Long">
+            <column name="rerrs" />
+        </property>
+        <property name="rdrop" type="java.lang.Long">
+            <column name="rdrop" />
+        </property>
+        <property name="sbytes" type="java.lang.Long">
+            <column name="sbytes" />
+        </property>
+        <property name="spackets" type="java.lang.Long">
+            <column name="spackets" />
+        </property>
+        <property name="serrs" type="java.lang.Long">
+            <column name="serrs" />
+        </property>
+        <property name="sdrop" type="java.lang.Long">
+            <column name="sdrop" />
+        </property>
+        <property name="time" type="java.lang.Long">
+            <column name="time" />
+        </property>
+    </class>
+</hibernate-mapping>

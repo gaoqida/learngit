@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-8-24 12:59:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ict.ac.cn.hibernate.Meminfo" table="meminfo" catalog="bdtune">
+        <id name="memid" type="java.lang.Long">
+            <column name="memid" />
+            <generator class="identity" />
+        </id>
+        <property name="hostname" type="string">
+            <column name="hostname" length="32" not-null="true" />
+        </property>
+        <property name="time" type="java.lang.Long">
+            <column name="time" />
+        </property>
+        <property name="memTotal" type="java.lang.Long">
+            <column name="mem_total" />
+        </property>
+        <property name="free" type="java.lang.Long">
+            <column name="free" />
+        </property>
+        <property name="buffers" type="java.lang.Long">
+            <column name="buffers" />
+        </property>
+        <property name="cached" type="java.lang.Long">
+            <column name="cached" />
+        </property>
+        <property name="swapCached" type="java.lang.Long">
+            <column name="swap_cached" />
+        </property>
+        <property name="active" type="java.lang.Long">
+            <column name="active" />
+        </property>
+        <property name="inactive" type="java.lang.Long">
+            <column name="inactive" />
+        </property>
+        <property name="swapTotal" type="java.lang.Long">
+            <column name="swap_total" />
+        </property>
+        <property name="swapFree" type="java.lang.Long">
+            <column name="swap_free" />
+        </property>
+    </class>
+</hibernate-mapping>

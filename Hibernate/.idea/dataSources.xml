@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3625394123">
+    <data-source source="LOCAL" name="SessionFoctory" uuid="24de68bc-2218-4bb4-a0c5-2f3df3fd054a">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/bdtune</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/lib/javax.ejb.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

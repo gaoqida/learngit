@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-8-24 12:59:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ict.ac.cn.hibernate.Disk" table="disk" catalog="bdtune">
+        <id name="diskid" type="java.lang.Long">
+            <column name="diskid" />
+            <generator class="identity" />
+        </id>
+        <version name="timestamp" type="java.lang.Long">
+            <column name="timestamp" />
+        </version>
+        <property name="hostname" type="string">
+            <column name="hostname" length="32" not-null="true" />
+        </property>
+        <property name="diskRead" type="java.lang.Long">
+            <column name="disk_read" />
+        </property>
+        <property name="diskReadMerged" type="java.lang.Long">
+            <column name="disk_read_merged" />
+        </property>
+        <property name="diskReadSectors" type="java.lang.Long">
+            <column name="disk_read_sectors" />
+        </property>
+        <property name="diskReadTime" type="java.lang.Long">
+            <column name="disk_read_time" />
+        </property>
+        <property name="diskWrite" type="java.lang.Long">
+            <column name="disk_write" />
+        </property>
+        <property name="diskWriteMerged" type="java.lang.Long">
+            <column name="disk_write_merged" />
+        </property>
+        <property name="diskWriteSectors" type="java.lang.Long">
+            <column name="disk_write_sectors" />
+        </property>
+        <property name="diskWriteTime" type="java.lang.Long">
+            <column name="disk_write_time" />
+        </property>
+        <property name="progressIo" type="java.lang.Long">
+            <column name="progress_io" />
+        </property>
+        <property name="ioTime" type="java.lang.Long">
+            <column name="io_time" />
+        </property>
+        <property name="ioTimeWeighted" type="java.lang.Long">
+            <column name="io_time_weighted" />
+        </property>
+    </class>
+</hibernate-mapping>

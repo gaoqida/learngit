@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="SessionFoctory">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">123456</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bdtune</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping class="ict.ac.cn.hibernate.ProcessCpu" />
+        <mapping class="ict.ac.cn.hibernate.Snmp" />
+        <mapping class="ict.ac.cn.hibernate.Host" />
+        <mapping class="ict.ac.cn.hibernate.Jvm" />
+        <mapping class="ict.ac.cn.hibernate.Vmstat" />
+        <mapping class="ict.ac.cn.hibernate.Perf" />
+        <mapping class="ict.ac.cn.hibernate.Meminfo" />
+        <mapping class="ict.ac.cn.hibernate.Cpuinfo" />
+        <mapping class="ict.ac.cn.hibernate.Disk" />
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-8-24 12:59:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ict.ac.cn.hibernate.Cpuinfo" table="cpuinfo" catalog="bdtune">
+        <id name="cpuid" type="java.lang.Long">
+            <column name="cpuid" />
+            <generator class="identity" />
+        </id>
+        <property name="hostname" type="string">
+            <column name="hostname" length="32" not-null="true" />
+        </property>
+        <property name="nice" type="java.lang.Long">
+            <column name="nice" />
+        </property>
+        <property name="sys" type="java.lang.Long">
+            <column name="sys" />
+        </property>
+        <property name="idle" type="java.lang.Long">
+            <column name="idle" />
+        </property>
+        <property name="iowait" type="java.lang.Long">
+            <column name="iowait" />
+        </property>
+        <property name="irq" type="java.lang.Long">
+            <column name="irq" />
+        </property>
+        <property name="softirq" type="java.lang.Long">
+            <column name="softirq" />
+        </property>
+        <property name="intr" type="java.lang.Long">
+            <column name="intr" />
+        </property>
+        <property name="ctx" type="java.lang.Long">
+            <column name="ctx" />
+        </property>
+        <property name="procs" type="java.lang.Long">
+            <column name="procs" />
+        </property>
+        <property name="running" type="java.lang.Long">
+            <column name="running" />
+        </property>
+        <property name="blocked" type="java.lang.Long">
+            <column name="blocked" />
+        </property>
+        <property name="time" type="java.lang.Long">
+            <column name="time" />
+        </property>
+        <property name="usr" type="java.lang.Long">
+            <column name="usr" />
+        </property>
+    </class>
+</hibernate-mapping>

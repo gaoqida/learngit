@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-8-24 12:59:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ict.ac.cn.hibernate.Jvm" table="jvm" catalog="bdtune">
+        <id name="jvmid" type="java.lang.Long">
+            <column name="jvmid" />
+            <generator class="identity" />
+        </id>
+        <property name="taskattemptId" type="string">
+            <column name="taskattempt_id" />
+        </property>
+        <property name="s0c" type="java.lang.Double">
+            <column name="s0c" precision="22" scale="0" />
+        </property>
+        <property name="s1c" type="java.lang.Double">
+            <column name="s1c" precision="22" scale="0" />
+        </property>
+        <property name="s0u" type="java.lang.Double">
+            <column name="s0u" precision="22" scale="0" />
+        </property>
+        <property name="s1u" type="java.lang.Double">
+            <column name="s1u" precision="22" scale="0" />
+        </property>
+        <property name="ec" type="java.lang.Double">
+            <column name="EC" precision="22" scale="0" />
+        </property>
+        <property name="eu" type="java.lang.Double">
+            <column name="EU" precision="22" scale="0" />
+        </property>
+        <property name="oc" type="java.lang.Double">
+            <column name="OC" precision="22" scale="0" />
+        </property>
+        <property name="pc" type="java.lang.Double">
+            <column name="PC" precision="22" scale="0" />
+        </property>
+        <property name="ou" type="java.lang.Double">
+            <column name="OU" precision="22" scale="0" />
+        </property>
+        <property name="pu" type="java.lang.Double">
+            <column name="PU" precision="22" scale="0" />
+        </property>
+        <property name="ygc" type="java.lang.Double">
+            <column name="YGC" precision="22" scale="0" />
+        </property>
+        <property name="ygct" type="java.lang.Double">
+            <column name="YGCT" precision="22" scale="0" />
+        </property>
+        <property name="fgc" type="java.lang.Double">
+            <column name="FGC" precision="22" scale="0" />
+        </property>
+        <property name="fgct" type="java.lang.Double">
+            <column name="FGCT" precision="22" scale="0" />
+        </property>
+        <property name="gct" type="java.lang.Double">
+            <column name="GCT" precision="22" scale="0" />
+        </property>
+        <property name="time" type="java.lang.Long">
+            <column name="time" />
+        </property>
+    </class>
+</hibernate-mapping>

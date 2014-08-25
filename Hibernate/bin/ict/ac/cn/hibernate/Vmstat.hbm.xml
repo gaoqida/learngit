@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-8-24 12:59:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ict.ac.cn.hibernate.Vmstat" table="vmstat" catalog="bdtune">
+        <id name="vmstatid" type="java.lang.Long">
+            <column name="vmstatid" />
+            <generator class="identity" />
+        </id>
+        <property name="hostname" type="string">
+            <column name="hostname" length="32" not-null="true" />
+        </property>
+        <property name="pgin" type="java.lang.Long">
+            <column name="pgin" />
+        </property>
+        <property name="pgout" type="java.lang.Long">
+            <column name="pgout" />
+        </property>
+        <property name="pgfault" type="java.lang.Long">
+            <column name="pgfault" />
+        </property>
+        <property name="pgmajfault" type="java.lang.Long">
+            <column name="pgmajfault" />
+        </property>
+        <property name="time" type="java.lang.Long">
+            <column name="time" />
+        </property>
+    </class>
+</hibernate-mapping>

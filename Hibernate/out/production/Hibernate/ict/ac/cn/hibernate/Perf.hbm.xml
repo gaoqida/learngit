@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-8-24 12:59:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ict.ac.cn.hibernate.Perf" table="perf" catalog="bdtune">
+        <id name="perfid" type="java.lang.Long">
+            <column name="perfid" />
+            <generator class="identity" />
+        </id>
+        <property name="hostname" type="string">
+            <column name="hostname" length="32" />
+        </property>
+        <property name="cyclesU" type="java.lang.Long">
+            <column name="cycles_u" />
+        </property>
+        <property name="cyclesK" type="java.lang.Long">
+            <column name="cycles_k" />
+        </property>
+        <property name="insU" type="java.lang.Long">
+            <column name="ins_u" />
+        </property>
+        <property name="insK" type="java.lang.Long">
+            <column name="ins_k" />
+        </property>
+        <property name="branchU" type="java.lang.Long">
+            <column name="branch_u" />
+        </property>
+        <property name="branchK" type="java.lang.Long">
+            <column name="branch_k" />
+        </property>
+        <property name="loadU" type="java.lang.Long">
+            <column name="load_u" />
+        </property>
+        <property name="loadK" type="java.lang.Long">
+            <column name="load_k" />
+        </property>
+        <property name="storeU" type="java.lang.Long">
+            <column name="store_u" />
+        </property>
+        <property name="storeK" type="java.lang.Long">
+            <column name="store_k" />
+        </property>
+        <property name="ssePSi" type="java.lang.Long">
+            <column name="sse_p_si" />
+        </property>
+        <property name="sseSSi" type="java.lang.Long">
+            <column name="sse_s_si" />
+        </property>
+        <property name="ssePD" type="java.lang.Long">
+            <column name="sse_p_d" />
+        </property>
+        <property name="sseSD" type="java.lang.Long">
+            <column name="sse_s_d" />
+        </property>
+        <property name="fp" type="java.lang.Long">
+            <column name="fp" />
+        </property>
+        <property name="l2CacheMissU" type="java.lang.Long">
+            <column name="l2_cache_miss_u" />
+        </property>
+        <property name="l2CacheMissK" type="java.lang.Long">
+            <column name="l2_cache_miss_k" />
+        </property>
+        <property name="l2HitU" type="java.lang.Long">
+            <column name="l2_hit_u" />
+        </property>
+        <property name="l2HitK" type="java.lang.Long">
+            <column name="l2_hit_k" />
+        </property>
+        <property name="l1dMissU" type="java.lang.Long">
+            <column name="l1d_miss_u" />
+        </property>
+        <property name="l1dMissK" type="java.lang.Long">
+            <column name="l1d_miss_k" />
+        </property>
+        <property name="l1dHitU" type="java.lang.Long">
+            <column name="l1d_hit_u" />
+        </property>
+        <property name="l1dHitK" type="java.lang.Long">
+            <column name="l1d_hit_k" />
+        </property>
+        <property name="l1iHitU" type="java.lang.Long">
+            <column name="l1i_hit_u" />
+        </property>
+        <property name="l1iHitK" type="java.lang.Long">
+            <column name="l1i_hit_k" />
+        </property>
+        <property name="l1iMissU" type="java.lang.Long">
+            <column name="l1i_miss_u" />
+        </property>
+        <property name="l1iMissK" type="java.lang.Long">
+            <column name="l1i_miss_k" />
+        </property>
+        <property name="itlbMissU" type="java.lang.Long">
+            <column name="itlb_miss_u" />
+        </property>
+        <property name="itlbMissK" type="java.lang.Long">
+            <column name="itlb_miss_k" />
+        </property>
+        <property name="dtlbMissU" type="java.lang.Long">
+            <column name="dtlb_miss_u" />
+        </property>
+        <property name="dtlbMissK" type="java.lang.Long">
+            <column name="dtlb_miss_k" />
+        </property>
+        <property name="l3MissU" type="java.lang.Long">
+            <column name="l3_miss_u" />
+        </property>
+        <property name="l3MissK" type="java.lang.Long">
+            <column name="l3_miss_k" />
+        </property>
+        <property name="l3HitU" type="java.lang.Long">
+            <column name="l3_hit_u" />
+        </property>
+        <property name="l3HitK" type="java.lang.Long">
+            <column name="l3_hit_k" />
+        </property>
+        <property name="insDecodeU" type="java.lang.Long">
+            <column name="ins_decode_u" />
+        </property>
+        <property name="insDecodeK" type="java.lang.Long">
+            <column name="ins_decode_k" />
+        </property>
+        <property name="l1iCycleeStallU" type="java.lang.Long">
+            <column name="l1i_cyclee_stall_u" />
+        </property>
+        <property name="l1iCycleeStallK" type="java.lang.Long">
+            <column name="l1i_cyclee_stall_k" />
+        </property>
+        <property name="resourceStallU" type="java.lang.Long">
+            <column name="resource_stall_u" />
+        </property>
+        <property name="resourceStallK" type="java.lang.Long">
+            <column name="resource_stall_k" />
+        </property>
+        <property name="ratStallU" type="java.lang.Long">
+            <column name="rat_stall_u" />
+        </property>
+        <property name="ratStallK" type="java.lang.Long">
+            <column name="rat_stall_k" />
+        </property>
+        <property name="time" type="java.lang.Long">
+            <column name="time" />
+        </property>
+    </class>
+</hibernate-mapping>

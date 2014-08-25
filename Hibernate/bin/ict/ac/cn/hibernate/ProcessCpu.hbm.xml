@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-8-24 12:59:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="ict.ac.cn.hibernate.ProcessCpu" table="process_cpu" catalog="bdtune">
+        <id name="PCpuid" type="java.lang.Long">
+            <column name="p_cpuid" />
+            <generator class="identity" />
+        </id>
+        <property name="taskattemptId" type="string">
+            <column name="taskattempt_id" />
+        </property>
+        <property name="utime" type="java.lang.Long">
+            <column name="utime" />
+        </property>
+        <property name="stime" type="java.lang.Long">
+            <column name="stime" />
+        </property>
+        <property name="cutime" type="java.lang.Long">
+            <column name="cutime" />
+        </property>
+        <property name="cstime" type="java.lang.Long">
+            <column name="cstime" />
+        </property>
+        <property name="numThreads" type="java.lang.Long">
+            <column name="num_threads" />
+        </property>
+        <property name="startTime" type="java.lang.Long">
+            <column name="start_time" />
+        </property>
+        <property name="time" type="java.lang.Long">
+            <column name="time" />
+        </property>
+    </class>
+</hibernate-mapping>
